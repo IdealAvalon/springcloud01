@@ -3,6 +3,7 @@ package com.zhangdq.consumerfeign.controller;
 import com.zhangdq.consumerfeign.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,5 +20,9 @@ public class UserController {
     @GetMapping("/buy2")
     public String  buyTicket(String name){
         return name + " meile " + userService.buyTicket();
+    }
+    @RequestMapping("/aa")
+    public String aa(){
+        return "aaaa";
     }
 }
