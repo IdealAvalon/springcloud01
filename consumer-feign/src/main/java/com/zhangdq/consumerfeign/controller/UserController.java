@@ -19,6 +19,7 @@ public class UserController {
 
     @GetMapping("/buy2")
     public String  buyTicket(String name){
+
         return name + " meile " + userService.buyTicket();
     }
     @RequestMapping("/aa")
